@@ -15,6 +15,6 @@ func main() {
 			fmt.Println(err)
 			return
 	}
-	fmt.Println(percent[0]) 
+ 
 	fmt.Printf("CPU: %.2f%%\n", percent[0])
 }
