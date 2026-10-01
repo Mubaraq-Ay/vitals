@@ -59,5 +59,5 @@ func main() {
 	hours := int(duration.Hours())
 	minutes := int(duration.Minutes()) % 60
 	seconds := int(duration.Seconds()) % 60
-	fmt.Printf("Uptime: %dh %dm %ds\n", hours, minutes, seconds)
+	fmt.Printf("Uptime: %dh %dm %ds\n", hours, minutes, seconds) 
 }
