@@ -70,6 +70,30 @@ Run Vitals:
 go run .
 ```
 
+## Configuration
+
+Vitals currently checks a specific disk path that is configured directly in the source code.
+
+By default, the disk path is:
+
+```text
+C:\
+```
+
+If your system uses a different drive or path, manually change the path in `main.go` before running the program.
+
+For example:
+
+```go
+disk.Usage("D:\\")
+```
+
+or on Linux:
+
+```go
+disk.Usage("/")
+```
+
 ## Dependencies
 
 Vitals uses [gopsutil](https://github.com/shirou/gopsutil) to retrieve system and hardware information.
