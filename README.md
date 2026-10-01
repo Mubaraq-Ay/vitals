@@ -47,7 +47,7 @@ Usage: 4.21%
 
 ## Requirements
 
-* Go 1.XX or later
+* Go 1.27.1 or later
 
 ## Installation
 
