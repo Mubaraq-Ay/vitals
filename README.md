@@ -65,11 +65,6 @@ Vitals is a Go rewrite of an earlier system health checker I built in Python.
 
 The goal is to explore Go by building something small and practical while learning the language, standard library, error handling, packages, and system-level information.
 
-## Status
-
-Work in progress.
-
-More system diagnostics and cleaner output will be added as development continues.
 
 ## License
 
