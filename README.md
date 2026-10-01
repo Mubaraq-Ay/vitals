@@ -1,38 +1,53 @@
 # Vitals
 
-A lightweight system diagnostics CLI written in Go.
+A lightweight system diagnostics CLI built with Go.
 
-Vitals provides a simple way to inspect basic system information and resource usage directly from the terminal.
+Vitals gives you a quick overview of your machine's current system information and resource usage directly from the terminal.
 
 ## Features
 
-- CPU usage
-- Memory information
-- Disk usage
-- Hostname
-- Operating system information
-- System uptime
+* CPU usage
+* Memory usage
+* Disk usage
+* Hostname
+* Operating system
+* System uptime
+* Human-readable resource values
+* Simple terminal output
 
 ## Example
 
 ```text
 Vitals
+======
 
-CPU: 2.15%
-Total memory: 17019527168 bytes
-
-Disk path: C:\
-Total: 511110590464 bytes
-Free: 168234340352 bytes
-Used: 67.09%
-
+System
+------
 Hostname: DESKTOP-XXXXX
 OS: windows
+Uptime: 5h 42m 18s
+
+Disk
+------
+Path: C:\
+Total: 476.01 GB
+Free: 156.72 GB
+Used: 67.09%
+
+Memory
+------
+Total: 15.86 GB
+Used: 8.21 GB
+Available: 7.65 GB
+
+CPU
+------
+Usage: 4.21%
 ```
 
 ## Requirements
 
-- Go 1.XX or later
+* Go 1.XX or later
 
 ## Installation
 
@@ -59,12 +74,16 @@ go run .
 
 Vitals uses [gopsutil](https://github.com/shirou/gopsutil) to retrieve system and hardware information.
 
+## Built With
+
+* Go
+* gopsutil
+
 ## Why Vitals?
 
-Vitals is a Go rewrite of an earlier system health checker I built in Python.
+Vitals started as a rewrite of an earlier system health checker I built in Python.
 
-The goal is to explore Go by building something small and practical while learning the language, standard library, error handling, packages, and system-level information.
-
+I built it as a small, practical way to learn Go by working with its standard library, external packages, error handling, types, formatting, and system-level information.
 
 ## License
 
